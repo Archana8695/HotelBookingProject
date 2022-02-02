@@ -5,12 +5,34 @@
 </head>
 <body>
     <!-- Header Div -->
-    <img src = "C:\Users\USER DD\Desktop\HotelBookingProject\assests\images\logo.png" width="200" height="150"/>
-    <a href=""target ="_self">Login</a></br>
-    
+    <a href="index.html" target= "_self"> 
+    <img src = "C:\Users\USER DD\Desktop\HotelBookingProject\assests\images\logo.png" width="200" height="150"/></a>
+    <a href="login.html"target ="_self">Login</a></br>
+
     <!-- Content Div -->
     <img src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/></br>
-    <a href="payment.html"target ="_self">Book Now</a></br>
+
+
+        <form action="payment.html" method="get">
+        
+            <label for="adults">Adults:</label>
+            <input type="number" id="adults" name="adults"  min="1" required /></br> 
+    
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required /></br>
+          
+            <label for="fromdate">From Date:</label>
+            <input type="date" name="fromdate" required /></br>
+
+            <label for="todate">To Date:</label>
+            <input type="date" name="todate" required /></br>
+
+            <label for="total">Total:</label>
+            <input type="text" id="total" name="total" /></br> 
+
+            <button type="submit">Book Now</button>  
+        </form>
+
     <h2><p>Radisson Blu Hotel</p></h2>
     <p>RATING</p><p>5 Star</p>
     <p>AMENITIES</p>
@@ -25,7 +47,7 @@
     <p>Lorem ipsum dolor sit amet consectetue adipisicing elit. Deleniti, illum totam magni voluptatibus libero delectus nesciunt hic vel! Aperiam esse asperiores culps, natus quam quis eum ex doloremque doloribus architecto!</p>
 
     <!-- Footer Div -->
-    <a href = "contact.html"target="_blank">Contact Us</a></br>
+    <a href = "contact.html"target="_self">Contact Us</a></br>
     <a href="https://www.facebook.com" target= "_blank">
         <img alt="facebook" src="C:\Users\USER DD\Desktop\HotelBookingProject\assests\images\facebook.png" width = "22px" height  = "22px"/></a>
     <a href="https://www.instagram.com" target= "_blank"> 
