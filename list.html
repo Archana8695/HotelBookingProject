@@ -2,48 +2,69 @@
 <html lang="en">
 <head>
     <title>List</title>
+    <link rel="stylesheet" href="styles/list.css">
+    <link rel="stylesheet" href="styles/common.css">
 </head>
 <body>
     <!-- Header Div -->
-    <a href="index.html" target= "_self"> 
-    <img src = "C:\Users\USER DD\Desktop\HotelBookingProject\assests\images\logo.png" width="200" height="150"/></a>
-    <a href="login.html"target ="_self">Login</a></br>
-    <ul><li><a href=" ">List View</a></li></ul>
-    <ul><li><a href=" ">Map View</a></li></ul> 
+    <div id ="wrapper">
+        <header id ="header">
+            <a href="index.html"><img src = "assests\images\logo.png" alt="logo"/>
+        <a href="login.html"target ="_self">Login</a></br>
+            </header>
+    <!-- Content Div -->
+            <div class="content">
+                <ul><li><a href="#listView">List View</a></li>
+                <li><a href="#mapView">Map View</a></li></ul> 
 
     <!--Hotel 1 Radisson Blu Hotel  -->
-        <a href="detail.html" target= "_self"> 
-        <img src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/>
-        </a></br></br>
-        <a href= "detail.html" target= "_self">Radisson Blu Hotel</a></br></br>
-        <a href= "detail.html" target= "_self">5 Star</a></br></br>  
-        <a href= "detail.html" target= "_self">New Delhi</a></br> </br>  
+    <div id="listView">
+        <a href="detail.html" target= "_self">
+            <div class="hotelList">
+                <img src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="RadissonHotelImage"/>
+                </a></br></br>
+
+                <a href= "detail.html" target= "_self"><h3>Radisson  Blu Hotel</h3></a>
+                <a href= "detail.html" target= "_self">5 Star</a>
+                <a href= "detail.html" target= "_self"> <p>New Delhi</p></a>
+            </div>s
 
     <!-- Hotel 2 NewDelhi -->
-        <img src = "https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"/></br></br>
-        <p> <h4>The Lalit New Delhi</h4></p>
-        <p> 4.5 Star</p>
-        <p> New Delhi</p>      
+            <div class="hotelList">
+                <img src = "https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="LalitHotelImage"/></br></br>
+                 <p> <h3>The Lalit New Delhi</h3></p>
+                 <p> 4.5 Star</p>
+                 <p> New Delhi</p>      
+            </div>
 
     <!-- Hotel 3 Taj Palace -->
-        <img src = "https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"/></br></br>
-        <p> <h4>Taj Palace</h4></p>
-        <p> 4.0 Star</p>
-        <p> New Delhi</p>   
+            <div class="hotelList">
+                <img src = "https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="TajHotelImage"/></br></br>
+                <p> <h3>Taj Palace</h3></p>
+                <p> 4.0 Star</p>
+                <p> New Delhi</p>   
+            </div>
+    </div>
 
     <!-- Map View -->
-        <img src = "https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"/></br></br>
+    <div id="mapView">
+        <img src = "https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="MapImage"/></br></br>
         <p>MAP VIEW</p> 
+    </div>
 
     <!-- Footer Div -->
+    <div class="footer">
+        <footer>
     <a href = "contact.html"target="_self">Contact Us</a></br>
     <a href="https://www.facebook.com" target= "_blank">
-        <img alt="facebook" src="C:\Users\USER DD\Desktop\HotelBookingProject\assests\images\facebook.png" width = "22px" height  = "22px"/></a>
+        <img alt="facebook" src="assests/images/facebook.png"/></a>
     <a href="https://www.instagram.com" target= "_blank"> 
-        <img alt="instagram" src="C:\Users\USER DD\Desktop\HotelBookingProject\assests\images\instagram.png" width = "22px" height  = "22px"/></a> 
+        <img alt="instagram" src="assests/images/instagram.png"/></a> 
     <a href="https://twitter.com" target= "_blank"> 
-        <img alt="twitter" src="C:\Users\USER DD\Desktop\HotelBookingProject\assests\images\twitter.png" width = "22px" height  = "22px"/></a>
-    <p>&#169;2020 ROOM SEARCH PVT LTD</p>
-
+        <img alt="twitter" src="assests/images/twitter.png"/></a></br>
+    
+        <span>&#169;2020 ROOM SEARCH PVT. LTD.</span>
+        </footer>
+    </div>
 </body>
 </html>

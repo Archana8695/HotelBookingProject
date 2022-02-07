@@ -2,30 +2,43 @@
 <html lang="en">
 <head>
     <title>Index</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/common.css">
 </head>
 <body>
-    <!-- Header Div -->
-    <img src = "C:\Users\USER DD\Desktop\HotelBookingProject\assests\images\logo.png" width="200" height="150"/>
-    <a href="login.html"target ="_self">Login</a></br>
 
-    <!-- Content Div -->
-<input type= "text" placeholder="City"></br>
-    <a href="list.html" target= "_self">
-<img alt= "" src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"width = "300px" height  = "300px"/></a>
-<img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"width = "300px" height  = "300px"/>
-<img src = "https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"width = "300px" height  = "300px"/>
-<img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"width = "300px" height  = "300px"/>
-</br>
+    <!-- Header Div --> 
+    <div id ="wrapper">
+        <header id ="header">
+          <img src = "assests\images\logo.png" alt="logo"/>
+        <a href="login.html"target ="_self">Login</a></br>
+            </header>
+
+<!-- Content Div -->
+    <!-- Search bar begin -->
+            <input type= "text" placeholder="City"></br>
+    <!-- Search bar ends -->
+<div id="content">
+<a href="list.html" target= "_self"><img class="container" alt= "city1" src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"/></a>
+<img class="container" alt= "city2" src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"/>
+<img class="container" alt= "city3" src = "https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"/>
+<img class="container" alt= "city4" src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"/>
+</div></br>
 <a href = "index.html">View more >></a></br>
 
 <!-- Footer Div -->
+<div class="footer">
+    <footer>
 <a href = "contact.html"target="_self">Contact Us</a></br>
 <a href="https://www.facebook.com" target= "_blank">
-    <img alt="facebook" src="C:\Users\USER DD\Desktop\HotelBookingProject\assests\images\facebook.png" width = "22px" height  = "22px"/></a>
+    <img alt="facebook" src="assests/images/facebook.png"/></a>
 <a href="https://www.instagram.com" target= "_blank"> 
-    <img alt="instagram" src="C:\Users\USER DD\Desktop\HotelBookingProject\assests\images\instagram.png" width = "22px" height  = "22px"/></a> 
+    <img alt="instagram" src="assests/images/instagram.png"/></a> 
 <a href="https://twitter.com" target= "_blank"> 
-    <img alt="twitter" src="C:\Users\USER DD\Desktop\HotelBookingProject\assests\images\twitter.png" width = "22px" height  = "22px"/></a>
-<p>&#169;2020 ROOM SEARCH PVT LTD</p>
+    <img alt="twitter" src="assests/images/twitter.png"/></a></br>
+
+    <span>&#169;2020 ROOM SEARCH PVT. LTD.</span>
+    </footer>
+</div>
 </body>
 </html>

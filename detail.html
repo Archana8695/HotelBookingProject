@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
     <title>Detail</title>
+    <link rel="stylesheet" href="styles/detail.css">
+    <link rel="stylesheet" href="styles/common.css">
 </head>
 <body>
     <!-- Header Div -->
-    <a href="index.html" target= "_self"> 
-    <img src = "C:\Users\USER DD\Desktop\HotelBookingProject\assests\images\logo.png" width="200" height="150"/></a>
-    <a href="login.html"target ="_self">Login</a></br>
+    <div id ="wrapper">
+        <header id ="header">
+            <a href="index.html"><img src = "assests\images\logo.png" alt="logo"/>
+            <a href="login.html"target ="_self">Login</a></br>
+        </header>
 
     <!-- Content Div -->
-    <img src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/></br>
+
+    <div id="content">
+        <div class="hotel1">
+    <img src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="RadissonHotelImage"/></br>
 
 
         <form action="payment.html" method="get">
@@ -45,16 +52,21 @@
     </ul>
     <h5><p>DESCRIPTION</p></h5>
     <p>Lorem ipsum dolor sit amet consectetue adipisicing elit. Deleniti, illum totam magni voluptatibus libero delectus nesciunt hic vel! Aperiam esse asperiores culps, natus quam quis eum ex doloremque doloribus architecto!</p>
+</div>
+</div>
+ <!-- Footer Div -->
+<div class="footer">
+    <footer>
+<a href = "contact.html"target="_self">Contact Us</a></br>
+<a href="https://www.facebook.com" target= "_blank">
+    <img alt="facebook" src="assests/images/facebook.png"/></a>
+<a href="https://www.instagram.com" target= "_blank"> 
+    <img alt="instagram" src="assests/images/instagram.png"/></a> 
+<a href="https://twitter.com" target= "_blank"> 
+    <img alt="twitter" src="assests/images/twitter.png"/></a></br>
 
-    <!-- Footer Div -->
-    <a href = "contact.html"target="_self">Contact Us</a></br>
-    <a href="https://www.facebook.com" target= "_blank">
-        <img alt="facebook" src="C:\Users\USER DD\Desktop\HotelBookingProject\assests\images\facebook.png" width = "22px" height  = "22px"/></a>
-    <a href="https://www.instagram.com" target= "_blank"> 
-        <img alt="instagram" src="C:\Users\USER DD\Desktop\HotelBookingProject\assests\images\instagram.png" width = "22px" height  = "22px"/></a> 
-    <a href="https://twitter.com" target= "_blank"> 
-        <img alt="twitter" src="C:\Users\USER DD\Desktop\HotelBookingProject\assests\images\twitter.png" width = "22px" height  = "22px"/></a>
-    <p>&#169;2020 ROOM SEARCH PVT LTD</p>
-
+    <span>&#169;2020 ROOM SEARCH PVT. LTD.</span>
+    </footer>
+</div>
 </body>
 </html>
