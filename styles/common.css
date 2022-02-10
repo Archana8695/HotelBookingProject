@@ -1,19 +1,25 @@
 body{
     height: 100%;
     width: 100%;
+    background-color: #e0e0e0;
+    margin: 0%;
 }
-
 #wrapper{
     height: 100%;
-    width: 100%;
+    width: 100%;   
 }
 
 header img{
     height: 60px;
-    width: 60px;
+    width: 60px;  
 }
-
 footer img{
     height: 20px;
-    width: 22px;
+    width: 22px; 
 } 
+header{
+    background-color: rosybrown;
+}
+footer{
+    background-color: rosybrown;
+}

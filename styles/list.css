@@ -2,3 +2,8 @@
     height: 200px;
     width: 250px;
 }  
+.hotelList{
+    background-color: rgb(132,136,139);
+    margin: 2%;
+    width: 40%;
+}
