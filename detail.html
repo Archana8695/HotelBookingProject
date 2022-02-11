@@ -4,71 +4,90 @@
     <title>Detail</title>
     <link rel="stylesheet" href="styles/detail.css">
     <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
 </head>
 <body>
     <!-- Header Div -->
     <div id ="wrapper">
-        <header id ="header">
+        <header>
             <a href="index.html"><img src = "assests\images\logo.png" alt="logo"/>
             <a href="login.html"target ="_self" class="login">Login</a></br>
         </header>
-
+    </div>
     <!-- Content Div -->
-
     <div id="content">
         <div id="hotel1" class="hotelDetail">
-    <img src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="RadissonHotelImage"/></br>
 
+        <div class="card">
+        <img src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="RadissonHotelImage"/></br>     
+    </div>
 
-        <form action="payment.html" method="get">
-        
-            <label for="adults">Adults:</label>
-            <input type="number" id="adults" name="adults"  min="1" required /></br> 
+        <div class="form">
+        <form>
+            <div class="label">
+                <label for="adults">Adults:</label>
+            <input type="number"  name="adults"  min="1" required class="adultField">
+            </div>
     
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required /></br>
-          
-            <label for="fromdate">From Date:</label>
-            <input type="date" name="fromdate" required /></br>
+            <div class="label">
+                <label for="name">Name:</label>
+            <input type="text"  name="name" required class="nameField">
+            </div>
 
-            <label for="todate">To Date:</label>
-            <input type="date" name="todate" required /></br>
+            <div class="label">
+                <label for="from_date">From Date:</label>
+            <input type="date" name="fromdate" required style="margin-left: 1em;">
+            </div>
 
-            <label for="total">Total:</label>
-            <input type="text" id="total" name="total" /></br> 
+            <div class="label">
+                <label for="to_date">To Date:</label>
+            <input type="date" name="todate" required style="margin-left: 2.3em;">
+            </div>
 
-            <button type="submit">Book Now</button>  
+            <div class="label">
+                <label for="total">Total:</label>
+            <input type="text" id="total" name="total" readonly class="totalField">
+            </div>
+
+            <button type="submit" formaction="payment.html">Book Now</button>  
         </form>
+        </div>
+    </div>
 
-    <h2><p>Radisson Blu Hotel</p></h2>
-    <p>RATING</p><p>5 Star</p>
-    <p>AMENITIES</p>
-    <ul>
-        <li>Room service</li>
-        <li>Restaurant</li>
-        <li>Bussiness center</li>
-        <li>Fitness center</li>
-        <li>Pool</li>
-    </ul>
-    <h5><p>DESCRIPTION</p></h5>
-    <p>Lorem ipsum dolor sit amet consectetue adipisicing elit. Deleniti, illum totam magni voluptatibus libero delectus nesciunt hic vel! Aperiam esse asperiores culps, natus quam quis eum ex doloremque doloribus architecto!</p>
+            <div class="info">
+                <h1><p>Radisson Blu Hotel</p></h1>
+                <h5><p>RATING</p></h5>
+                <p>5 Star</p>
+                <h5><p>AMENITIES</p></h5>
+                <ul>
+                    <li>Room service</li>
+                    <li>Restaurant</li>
+                    <li>Bussiness center</li>
+                    <li>Fitness center</li>
+                    <li>Pool</li>
+                </ul>
+                <h5><p>DESCRIPTION</p></h5>
+                <p>Lorem ipsum dolor sit amet consectetue adipisicing elit. Deleniti, illum totam magni voluptatibus libero delectus nesciunt hic vel! Aperiam esse asperiores culps, natus quam quis eum ex doloremque doloribus architecto!</p>
+            </div>
 </div>
-</div>
+
  <!-- Footer Div -->
-<div>
+
     <footer>
-        <a href="contact.html" target="_self" class="contact-us"><span>Contact Us</span></a>
+        <div id="contact">
+            <a href="contact.html" target="_self" class="contact-us"><span>Contact Us</span></a>
+        </div>
+
+        <div class="copyright">
+            <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
+        </div>
 
         <div id="social-media">     
             <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" ></a>
             <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram" ></a>
             <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" ><br></a>
-        </div>
-        <br>
-        <div class="copyright-info"></div>
-            <span class="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</span>
-        </div>
-        </footer>
+        </div>   
+    </footer>
 </div>
 </body>
 </html>

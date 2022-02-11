@@ -10,42 +10,57 @@
 
     <!-- Header Div --> 
     <div id ="wrapper">
-        <header>
+        <header >
           <img src = "assests\images\logo.png" alt="logo" class="logo"/>
-          <a href="login.html"target ="_self" class="login">Login</a></br>
+          <a href="login.html"target ="_self" class = "login">Login</a></br>
         </header>
     </div>
-
 <!-- Content Div -->
-<div id="content1">
+    <div id="content">
                 <!-- Search bar begin -->
                 <div id="searchBar">
                     <input type= "text" placeholder="City"></br>
                 </div>
                 <!-- Search bar ends -->
-<div id="content">
-        <a href="list.html" target= "_self"><img alt= "city1" src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"/></a>
-        <img  alt= "city2" src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"/>
-        <img  alt= "city3" src = "https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"/>
-        <img  alt= "city4" src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"/>
+            <div id="cityCards">
+                <div class="cards">
+                    <a href="list.html" target="_self"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="city1" ></a>
+                    <a href="list.html" target="_self"><div class="overlay"><span class="cityName">Delhi</span></div> </a>
+                </div>
+                <div class="cards">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="city2" >
+                    <div class="overlay"><span class="cityName">Goa</span></div>
+                </div>
+                <div class="cards">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="city3" >
+                    <div class="overlay"><span class="cityName">Hyderabad</span></div>
+                </div>
+                <div class="cards">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="city4" >
+                    <div class="overlay"><span class="cityName">Kolkata</span></div>
+                </div>
+            </div>
+            
         <a href = "#" class="viewMore">View more >></a></br>
 </div>  
-</div>    
+    
 
 <!-- Footer Div --> 
 
     <footer>
-        <a href="contact.html" target="_self" class="contact-us"><span>Contact Us</span></a>
+        <div id="contact">
+            <a href="contact.html" target="_self" class="contact-us"><span>Contact Us</span></a>
+        </div>
+
+        <div class="copyright">
+            <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
+        </div>
 
         <div id="social-media">     
             <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" ></a>
             <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram" ></a>
             <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" ><br></a>
-        </div>
-        <br>
-        <div class="copyright-info"></div>
-            <span class="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</span>
-        </div>
+        </div>   
         </footer>
 </div>
 </body>

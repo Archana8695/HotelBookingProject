@@ -4,68 +4,89 @@
     <title>List</title>
     <link rel="stylesheet" href="styles/list.css">
     <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
 </head>
 <body>
     <!-- Header Div -->
     <div id ="wrapper">
-        <header>
+        <header >
             <a href="index.html"><img src = "assests\images\logo.png" alt="logo"/>
-        <a href="login.html"target ="_self" class="login">Login</a></br>
-            </header>
+            <a href="login.html"target ="_self" class="login">Login</a></br>
+        </header>
+        </div>
     <!-- Content Div -->
             <div id="content">
+                <div id="viewLink"> 
                 <ul><li><a href="#listView" class="firstlist">List View</a></li>
                 <li><a href="#mapView">Map View</a></li></ul> 
-
+                </div>
     <!--Hotel 1 Radisson Blu Hotel  -->
     <div id="listView">
         <a href="detail.html" target= "_self">
             <div class="hotelList" id="h1">
-                <img src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="RadissonHotelImage"/>
-                </a></br></br>
+                <div class="card">
+                <img src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="RadissonHotelImage"/></a>
+                </div>
 
-                <a href= "#" target= "_self"><h3>Radisson  Blu Hotel</h3></a>
-                <a href= "#" target= "_self"><p>5 Star</p></a>
-                <a href= "#" target= "_self"> <p>New Delhi</p></a>
+                <div class="info"> 
+                    <h3>Radisson  Blu Hotel</h3>
+                    <p>5 Star</p>
+                    <p>New Delhi</p>
+                </div>
             </div>
 
     <!-- Hotel 2 NewDelhi -->
             <div class="hotelList" id="h2">
+                <div class="card">
                 <img src = "https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="LalitHotelImage"/></br></br>
+                </div>
+
+                <div class="info">
                  <p> <h3>The Lalit New Delhi</h3></p>
                  <p> 4.5 Star</p>
                  <p> New Delhi</p>      
+                </div>
             </div>
 
     <!-- Hotel 3 Taj Palace -->
             <div class="hotelList" id="h3">
+                <div class="card">
                 <img src = "https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="TajHotelImage"/></br></br>
+                </div>
+                
+                <div class="info">
                 <p> <h3>Taj Palace</h3></p>
                 <p> 4.0 Star</p>
-                <p> New Delhi</p>   
+                <p> New Delhi</p> 
+                </div>  
             </div>
     </div>
 
     <!-- Map View -->
     <div id="mapView">
+        <div class="card1">
         <img src = "https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="MapImage"/></br></br>
+        </div>
+        
         <p>MAP VIEW</p> 
     </div>
 
     <!-- Footer Div -->
 
     <footer>
-        <a href="contact.html" target="_self" class="contact-us"><span>Contact Us</span></a>
+        <div id="contact">
+            <a href="contact.html" target="_self" class="contact-us"><span>Contact Us</span></a>
+        </div>
+
+        <div class="copyright">
+            <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
+        </div>
 
         <div id="social-media">     
             <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" ></a>
             <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram" ></a>
             <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" ><br></a>
-        </div>
-        <br>
-        <div class="copyright-info"></div>
-            <span class="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</span>
-        </div>
+        </div>   
         </footer>
     </div>
 </body>
