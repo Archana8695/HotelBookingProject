@@ -6,4 +6,26 @@
     background-color: rgb(132,136,139);
     margin: 2%;
     width: 40%;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+#content1{
+    margin-top: 6%;
+}
+.firstlist{
+    margin-left: 36%;
+}
+#content ul li{
+    text-align: center; 
+    display: inline;
+    list-style-type: none;
+    margin-left: 30px;
+}
+#content ul li a{
+    text-decoration: none;
+    color: black;
+}
+#mapView{
+    display: none;
 }
