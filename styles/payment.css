@@ -21,11 +21,8 @@
     justify-content: space-around;
     align-items: center;
     margin: 2%;
+    margin-bottom: 8em;
     border: 1px solid black;
     border-radius: 5px;
     background-color:  rosybrown;
-}
-.payButton{
-    text-decoration: none;
-    color: black;
 }
