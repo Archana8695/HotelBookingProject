@@ -5,10 +5,10 @@ body{
     margin: 0%;
     font-family: 'Ubuntu', sans-serif;
 }
-  /* #wrapper{
+   #wrapper{
     height: 100%;
     width: 100%;   
- }  */
+ }  
 
 header img{
     height: 60px;
@@ -50,11 +50,34 @@ footer{
     color: black;
 }
 #contact{
-    margin-left: 2%;
+    margin-left: 2em;
 }
 #social-media{
-    margin-right: 1em;
+    margin-right: 2em;
 }
 .copyright{
     font-size: 10px;
 } 
+@media only screen and (min-width:576px) and ( max-width:768px) {
+
+    header{
+        height: 4em;
+    }
+    footer{
+        height: 4em;
+    }
+    .copyright{
+        font-size: 15px;
+    }
+  }
+  @media only screen and (max-width:576px){
+        header{
+            height: 4em;
+        }
+        footer{
+            height: 4em;
+        }
+        .copyright{
+            font-size: 15px;
+        }
+  } 
