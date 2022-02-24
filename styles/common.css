@@ -1,18 +1,18 @@
 body{
     height: 100%;
     width: 100%;
+    margin: 0;
     background-color: #e0e0e0;
-    margin: 0%;
     font-family: 'Ubuntu', sans-serif;
 }
-   #wrapper{
+#wrapper{
+    width: 100%;
     height: 100%;
-    width: 100%;   
- }  
+}
 
 header img{
     height: 60px;
-    width: 60px;  
+    width: 60px;
 }
 
 header{
@@ -23,16 +23,18 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
 #content{
     overflow: auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5em;
 }
+
 footer img{
     height: 20px;
-    width: 22px; 
-} 
+    width: 22px;
+}
 
 footer{
     background-color: rosybrown;
@@ -45,39 +47,46 @@ footer{
     align-items: center;
     height: 3em;
 }
-.contact-us{
+
+.contact-us {
     text-decoration: none;
     color: black;
 }
-#contact{
+
+#contact {
     margin-left: 2em;
 }
+
 #social-media{
     margin-right: 2em;
 }
+
 .copyright{
     font-size: 10px;
-} 
+}
 @media only screen and (min-width:576px) and ( max-width:768px) {
 
     header{
         height: 4em;
     }
+
     footer{
         height: 4em;
     }
     .copyright{
         font-size: 15px;
     }
+
   }
   @media only screen and (max-width:576px){
         header{
             height: 4em;
         }
+
         footer{
             height: 4em;
         }
         .copyright{
             font-size: 15px;
         }
-  } 
+  }
