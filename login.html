@@ -5,14 +5,16 @@
  	</head>
 	<body>
 		<div class="wrapper">
-			<form>
+			<form id="login-form">
 				<label for="UserName">Username:</label>
-				<input type="text" placeholder="Enter Username" name="username" required>
+				<input type="text" placeholder="Enter Username" name="username" id="username-field" class="login-form-field" required>
 				<br>
 				<label for="Password">Password:</label>
-				<input type="password" placeholder="Enter Password" name="password" required>
+				<input type="password" placeholder="Enter Password" name="password" id="password-field" class="login-form-field" required>
 				<br>
-				<button type="submit" formaction="index.html">Login</button>
+				<button type="submit" value= "Login" id="login" name="login"  formaction="index.html"></button>
+				
+
 			</form>
 		</div>
 	</body>

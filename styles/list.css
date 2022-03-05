@@ -14,6 +14,7 @@ body a{
 #listView{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 5%;
 }
 .hotelList{
     background-color: lightgrey;

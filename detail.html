@@ -15,16 +15,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
 </head>
 <body>
-    <!-- Header Div -->
-    <div id ="wrapper">
-        <div id="loader">
-
-        </div>
-        <header>
-            <a href="index.html"><img src = "assests\images\logo.png" alt="logo"></a>
-            <a href="login.html"target ="_self" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#login" style="margin-right: 2em;"><span>LOGIN</span></a>
-        </header>
     
+    <div id ="wrapper">
+        <div id="loader"></div>
+    <!-- Header Div -->    
+        <header class="header-footer" id="header"></header>
+    
+
     <!-- Content Div -->
     <div id="content">
         
@@ -57,23 +54,23 @@
       <form id="form" action="payment.html">
         <div class="inputs">
           <label for="adults" >Adults:</label>
-          <input type="number" min="1" value="1" name="adult" required>
+          <input type="number" min="1" value="1" name="adult" oninput="displayTotalPrice()" id="adult" required>
         </div>
         <div class="inputs">
           <label for="name">Name:</label>
-          <input type="text" name="name" id="" required>
-        </div>
+            <input type="text" name="name" id="name" required>
+          </div>
         <div class="inputs">
             <label for="fromDate">From Date:</label>
-            <input type="date" name="fromDate" id="" required>
+            <input type="date" name="fromDate" id="from-date" oninput="displayTotalPrice()" required>
           </div>
           <div class="inputs">
             <label for="toDate">To Date:</label>
-            <input type="date" name="toDate" id="" required>
+            <input type="date" name="toDate" id="to-date"  oninput="displayTotalPrice()" required>
           </div>
           <div class="inputs">
             <label for="total">Total:</label>
-            <input type="text" name="" id="" readonly>
+            <input type="text" name="total" id="total" readonly>
           </div>
           <div id="submitButton">
             <button type="submit" class="btn btn-outline-success">Book Now</button>
@@ -107,53 +104,12 @@
         </div>
 
 <!-- Login modal begin -->
-<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel" >Please Login</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body" style="text-align: center; ">
-            <label for="UserName" style="margin-left: 3em; ">Username:</label>
-            <input type="text" placeholder="Enter Username" name="username" required style="margin-left: 4em;">
-            <br>
-            <label for="Password" style="margin: 1.5em 0em 1em 3em;">Password :</label>
-            <input type="password" placeholder="Enter Password" name="password" required style="margin-left: 4em;">
-            <br>
-        </div>
-        <div class="modal-footer" style="padding-right: 13em;">
-
-          <button type="button" class="btn btn-primary">Login</button>
-        </div>
-      </div>
-    </div>
-  </div>	
+    <div id="headerModal"></div>
 
 <!-- Login modal modal id end -->
 
 <!-- Contact-us modal begin -->
-<div class="modal fade" id="contact-us" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel" >Get in touch</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <span>Thank you for reaching out!!!</span><br> 
-            <span>Please enter you email and we get back to you.</span><br>
-            <label for="email">Email:</label>
-            <input type="email" placeholder="Enter your email id" name="email" required>
-            <br>
-        </div>
-        <div class="modal-footer">
-
-          <button type="submit" formaction="index.html" class="btn btn-primary">Submit</button>
-        </div>
-      </div>
-    </div>
-  </div>	
+    <div id="footerModal"></div>	
 <!-- Contact-us modal ends -->
 
 
@@ -162,20 +118,11 @@
  <!-- Footer Div -->
 
     <footer>
-        <div id="contact">
-            <a href="contact.html" target="_self" class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#contact-us"><span>Contact Us</span></a>
-        </div>
-
-        <div class="copyright">
-            <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
-        </div>
-
-        <div id="social-media">     
-            <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" ></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram" ></a>
-            <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" ><br></a>
-        </div>   
+      <footer id="footer" class="header-footer"></footer> 
     </footer>
 </div>
+
+    <script src="scripts/detail.js"></script>
+		<script src="scripts/common.js"></script>
 </body>
 </html>

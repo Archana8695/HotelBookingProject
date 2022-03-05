@@ -2,9 +2,10 @@
     margin-bottom: 5%;
 }
 #content img{
-    max-height: 350px;
-    width: 25em;
-    margin-top: 1em;
+    height: 300px;
+  
+    margin-top: 20px;
+    display: block;
 }
 #hotelDetail{
     
@@ -16,21 +17,20 @@
     border: 1px solid black;
 }
 #imageSlider{
-    flex-grow: 3;
+   
     display: flex;
     border-right: 1px solid black ;
 
 }
 #imageSlider .carousel-item {
-  max-height: 350px;
-  max-width: 1000px;
-  padding: 1% 20% ;
+  display: block;
+  padding: 1% 25% ;
 }
     
 #form{
     display: flex;
     height: 110%;
-    width: 40%;
+    width: 60%;
     padding: 0 2%;
     flex-direction: column;
     justify-content: space-around;
@@ -99,7 +99,6 @@
       flex-direction: column;
       justify-content: space-between;
     }
-
   }
   @media only screen and (max-width:576px){
     #hotelDetail{
@@ -116,9 +115,9 @@
     }
     #imageSlider .carousel-item >img {
       margin: 2% ;
-      min-width: 300px;
-      min-height: 270px;
-      margin-top: 10%;
+      height: 250px;
+      width: 400px;
+      margin-top: 20%;
     }
     #form{
       display: flex;
