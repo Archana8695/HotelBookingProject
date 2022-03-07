@@ -1,3 +1,6 @@
+#wrapper {
+  display: none;
+}
 body a{
     text-decoration: none;
 }
@@ -5,7 +8,8 @@ body a{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 6em;   
+    margin-top: 6em;
+    visibility: hidden;   
 }
 .hotelList img{
     height: 200px;
@@ -96,7 +100,8 @@ body a{
     }
     #mapView{
       display: flex;
-      justify-content: center;
+      width: 100%;
+      height: 100%;
     }
 
   } 

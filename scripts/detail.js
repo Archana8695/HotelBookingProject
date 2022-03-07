@@ -4,10 +4,12 @@ const travelAdvisorHost = "travel-advisor.p.rapidapi.com";
 const travelAdvisorKey = "ebdb5ca7a5mshd16d3721db820b9p1d3088jsn9d0acd5c4717";
 
 let paramid = urlParams.get('id');
-console.log(paramid);
 
-
-
+function setIdOfTheHotel() {
+    const refToID = document.getElementById("id");
+    refToID.value = paramid;
+  }
+  setIdOfTheHotel();
 
 //fetch hotel photos
 let fetchHotelPhotosAPI = () => {
@@ -126,8 +128,3 @@ let displayTotalPrice = () => {
     }
 }
 
-function setIdOfTheHotel() {
-    const refToID = document.getElementById("id");
-    refToID.value = paramid;
-  }
-  setIdOfTheHotel();

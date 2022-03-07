@@ -4,10 +4,28 @@ const travelAdvisorHost = "travel-advisor.p.rapidapi.com";
 const travelAdvisorKey = "ebdb5ca7a5mshd16d3721db820b9p1d3088jsn9d0acd5c4717";
 
 //function for view city on the map view
-
-
-
-//Function for accessing the city and predent it
+let initMap = locations => {
+    let center = { lat: parseFloat(locations[0][1]), lng: parseFloat(locations[0][2]) };
+    let map = new google.maps.Map(document.getElementById(' '), {
+        zoom: 10,
+        center: center
+    });
+    let infoWindow = new google.maps.InfoWindow({});
+    let marker, count;
+    for (count = 0; count < locations.length; count++) {
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[count][1], locations[count][2]),
+            map: map,
+            title: locations[count][0]
+        });
+        google.maps.event.addListener(marker, 'click', ((marker, count) => {
+            return function () {
+                infoWindow.setContent(locations[count][0]);
+                infoWindow.open(map, marker);
+            }
+        })(marker, count));
+    }
+}
 
 let initList = hotelList => {
     let hotelListElement = document.getElementById('listView');
@@ -56,7 +74,7 @@ let fetchHotelListAPI = () => {
             });
             initList(hotelList);
             // initMap(locations);
-            disableLoader();
+            initMap(locations);
         }
     });
 

@@ -1,5 +1,6 @@
 #wrapper{
     margin-bottom: 10%;
+    display: none;
 }
 #content img{
     height: 340px;
